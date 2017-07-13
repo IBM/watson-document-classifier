@@ -1,6 +1,6 @@
 # watson-document-classifier - Work in progress
 
-# Augumented Classification of text with Watson Natural Language Understanding and IBM Data Science experience
+# Augmented Classification of text with Watson Natural Language Understanding and IBM Data Science experience
 
 In this developer journey we will use Jupyter notebooks in IBM Data Science experience(DSX) to augment
 IBM Watson Natural Language Understanding API output through configurable mechanism for text classification.
@@ -24,6 +24,8 @@ The intended audience for this journey is developers who want to learn method fo
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 * [Bluemix Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): A Bluemix service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
+
+* [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): A Bluemix service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
 
 ## Featured technologies
 
