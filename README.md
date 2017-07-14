@@ -1,5 +1,3 @@
-# watson-document-classifier - Work in progress
-
 # Augmented Classification of text with Watson Natural Language Understanding and IBM Data Science experience
 
 In this developer journey we will use Jupyter notebooks in IBM Data Science experience(DSX) to augment
@@ -54,7 +52,7 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 
 ## 2. Create Bluemix services
 
-Create the following Bluemix service by following the links to use the Bluemix UI and create it.
+Create the following Bluemix service by following the link to use the Bluemix UI and create it.
 
   * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
   
@@ -89,10 +87,36 @@ If you use configuration file from your computer, make sure to conform to the JS
 #### Fix-up variable names
 Once the files have been uploaded into ``DSX-ObjectStore`` you need to update the variables that refer to the data and configuration files in the Jupyter Notebook.
 
-In the notebook, we update the following variables in last cell `text = get_object(container, sampleTextFileName)` and `config = get_object(container, sampleConfigFileName)`. Replace the `sampleTextFileName` with the name of the data file and `sampleConfigFileName` with the configuration file name.
+In the notebook, update the global variables the in cell following `2.3 Global Variables` section.
+
+Replace the `sampleTextFileName` with the name of the data file and `sampleConfigFileName` with the configuration file name.
+
+![](doc/source/images/update_variables.png)
 
 ## 5. Update the notebok with service credentials
 
+#### Add the Watson Natural Language Understanding credentials to the notebook
+Select the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
+
+Open the Watson Natural Language Understanding service in your `Bluemix Dashboard`. You can follow the link below to use the Bluemix UI to open the service.
+* [**Watson Natural Language Understanding**](https://console.bluemix.net/dashboard/services)
+
+Once the service is open click the `Service Credentials` menu on the left.
+![](doc/source/images/service_credentials.png)
+
+In the `Service Credentials` that opens up in the UI, select `Credentials` you would like to use in the notebook from the `KEY NAME` column. Click `View credentials` and copy `username` and `password` key values that appear on the UI in JSON format.
+![](doc/source/images/copy_credentials.png)
+
+Update the `username` and `password` key values in the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section.
+![](doc/source/images/watson_nlu_credentials.png)
+
+#### Add the Object Storage credentials to the notebook
+Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update
+the credentials for Object Store. 
+
+Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert Crendentials` from drop down menu.
+
+![](doc/source/images/objectstorage_credentials.png)
 
 ## 6. Run the notebook
 
@@ -122,8 +146,9 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-The notebook stores the result in ``DSX-ObjectStore`` once it has completed the text classification. The results are stored in  `sample_text_classification.txt` file. Follow the link below to find the ``DSX-ObjectStore`` service listed. Click the ``DSX-ObjectStore`` in the list, click the listed containers to find `sample_text_classification.txt` in their file listing. Select `sample_text_classification.txt` file using select box on the left in the file listing. Click the `SelectAction` button on the top file of the file listing and use the Download File drop down menu to download `sample_text_classification.txt` file.
+The notebook stores the result in ``DSX-ObjectStore`` once it has completed the text classification. The results are stored in  `sample_text_classification.txt` file. Follow the link below to find the ``DSX-ObjectStore`` service listed. Click the ``DSX-ObjectStore`` in the list, click the listed containers to find `sample_text_classification.txt` in their file listing. Select `sample_text_classification.txt` file using select box on the left in the file listing. Click the `SelectAction` button on the top file of the file listing and use the `Download File` drop down menu to download `sample_text_classification.txt` file.
 
+Follow the link to open your Object Store Service in Bluemix.
 * [**DSX-ObjectStore**](https://console.bluemix.net/dashboard/storage)
 
 ![](doc/source/images/objectstore_download_file.png)
