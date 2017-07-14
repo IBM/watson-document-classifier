@@ -102,12 +102,15 @@ Open the Watson Natural Language Understanding service in your `Bluemix Dashboar
 * [**Watson Natural Language Understanding**](https://console.bluemix.net/dashboard/services)
 
 Once the service is open click the `Service Credentials` menu on the left.
+
 ![](doc/source/images/service_credentials.png)
 
 In the `Service Credentials` that opens up in the UI, select `Credentials` you would like to use in the notebook from the `KEY NAME` column. Click `View credentials` and copy `username` and `password` key values that appear on the UI in JSON format.
+
 ![](doc/source/images/copy_credentials.png)
 
 Update the `username` and `password` key values in the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section.
+
 ![](doc/source/images/watson_nlu_credentials.png)
 
 #### Add the Object Storage credentials to the notebook
