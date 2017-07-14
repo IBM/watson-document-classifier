@@ -7,7 +7,7 @@ When the reader has completed this journey, they will understand how to:
 
 * Create and run a Jupyter notebook in DSX.
 * Use DSX Object Storage to access a data and configuration files.
-* Use IBM Watson Watson Natural Language Understanding API to extract metadata from document in Jupyter notebooks.
+* Use IBM Watson Natural Language Understanding API to extract metadata from document in Jupyter notebooks.
 * Extract and format unstructured data using simplified Python functions.
 * Use a configuration file to build configurable and layered classification grammar.
 * Use the combination of grammatical classification and regex patterns from configuration file to classify word token classes.
