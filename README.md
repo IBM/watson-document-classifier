@@ -41,10 +41,11 @@ described in detail below.
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Create the notebook](#3-create-the-notebook)
-1. [Add the data and configuraton file](#4-add-the-data-config-file)
-1. [Update the notebook with service credentials](#5-update-the-notebook-service-credential)
+1. [Add the data and configuraton file](#4-add-the-data-and-configuration-file)
+1. [Update the notebook with service credentials](#5-update-the-notebook-with-service-credentials)
 1. [Run the notebook](#6-run-the-notebook)
 1. [Download the results](#7-download-the-results)
+1. [Analyze the results](#8-analyze-the-results)
 
 ## 1. Sign up for the Data Science Experience
 
@@ -93,7 +94,7 @@ Replace the `sampleTextFileName` with the name of the data file and `sampleConfi
 
 ![](doc/source/images/update_variables.png)
 
-## 5. Update the notebok with service credentials
+## 5. Update the notebook with service credentials
 
 #### Add the Watson Natural Language Understanding credentials to the notebook
 Select the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
@@ -155,6 +156,21 @@ Follow the link to open your Object Store Service in Bluemix.
 * [**DSX-ObjectStore**](https://console.bluemix.net/dashboard/storage)
 
 ![](doc/source/images/objectstore_download_file.png)
+
+
+## 7. Analyze the results
+
+After running each cell of the notebook under Classify text, the results will display. 
+
+The configuration json controls the way the text is classfied. The classification process is divided into stages - Base Tagging and Domain Tagging. The Base Tagging stage can be used to specify keywords based classification, regular expression based classification and tagging based on chunking expressions. The Domain Tagging stage can be used to specify classification that are specific to the domain to augment the results from Watson Natural Language Understanding.
+
+![](doc/source/images/text_classify_config.png)
+
+We can modify the configuration json to add more keywords, regular expressions to augment the text classification without any changes to the code.
+We can add more stages to the configuration json if required and enhance the text classification results with code modifications.
+
+It can be seen from the classification results that the keywords and regular expressions specified in the configuration have been correctly classified
+in the analyzed text.
 
 # Troubleshooting
 
