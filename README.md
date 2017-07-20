@@ -158,7 +158,7 @@ Follow the link to open your Object Store Service in Bluemix.
 ![](doc/source/images/objectstore_download_file.png)
 
 
-## 7. Analyze the results
+## 8. Analyze the results
 
 After running each cell of the notebook under Classify text, the results will display. 
 
@@ -170,7 +170,7 @@ We can modify the configuration json to add more keywords, regular expressions t
 We can add more stages to the configuration json if required and enhance the text classification results with code modifications.
 
 It can be seen from the classification results that the keywords and regular expressions specified in the configuration have been correctly classified
-in the analyzed text.
+in the analyzed text that is displayed.
 
 # Troubleshooting
 
