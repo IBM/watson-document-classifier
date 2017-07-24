@@ -32,6 +32,7 @@ The intended audience for this journey is developers who want to learn method fo
 
 # Watch the Video
 
+[![](http://img.youtube.com/vi/kp8dcM9AKrA/0.jpg)](https://www.youtube.com/watch?v=kp8dcM9AKrA)
 
 # Steps
 
