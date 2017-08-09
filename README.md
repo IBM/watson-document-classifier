@@ -6,14 +6,14 @@ IBM Watson Natural Language Understanding API output through configurable mechan
 When the reader has completed this journey, they will understand how to:
 
 * Create and run a Jupyter notebook in DSX.
-* Use DSX Object Storage to access a data and configuration files.
-* Use IBM Watson Natural Language Understanding API to extract metadata from document in Jupyter notebooks.
+* Use DSX Object Storage to access data and configuration files.
+* Use IBM Watson Natural Language Understanding API to extract metadata from documents in Jupyter notebooks.
 * Extract and format unstructured data using simplified Python functions.
 * Use a configuration file to build configurable and layered classification grammar.
-* Use the combination of grammatical classification and regex patterns from configuration file to classify word token classes.
+* Use the combination of grammatical classification and regex patterns from a configuration file to classify word token classes.
 * Store the processed output JSON in DSX Object Storage.
 
-The intended audience for this journey is developers who want to learn method for augumenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this journey is, it allows a configurable mechanism of text classification. It helps developer with a head start in case of text from specialized domain with no generally available english parser.
+The intended audience for this journey is developers who want to learn a method for augumenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is a scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this journey is that it allows a configurable mechanism of text classification. It helps give a developer a head start in the case of text from a specialized domain, with no generally available English parser.
 
 ![](doc/source/images/architecture.png)
 
@@ -54,13 +54,15 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 
 ## 2. Create Bluemix services
 
-Create the following Bluemix service by following the link to use the Bluemix UI and create it.
+Create the following Bluemix service and name it wdc-NLU-service:
 
   * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
   
   ![](doc/source/images/bluemix_service_nlu.png)
 
 ## 3. Create the notebook
+
+In [Data Science Experience](http://datascience.ibm.com/):
 
 Use the menu on the left to select `My Projects` and then `Default Project`.
 Click on `Add notebooks` (upper right) to create a notebook.
@@ -76,22 +78,24 @@ Click on `Add notebooks` (upper right) to create a notebook.
 ## 4. Add the data and configuration file
 
 #### Add the data and configuration to the notebook
-Use `Find and Add Data` (look for the `10/01` icon)
-and its `Files` tab. From there you can click
-`browse` and add data and configuration files from your computer.
 
-> Note:  If you don't have your own data and configuration files, you can get our example by cloning
-this git repo. Look in the `data/sample_text.txt` directory for data file and in the `configuration/sample_config.txt`.
-If you use configuration file from your computer, make sure to conform to the JSON structure given in `configuration/sample_config.txt`.
+* From the `My Projects > Default` page, Use `Find and Add Data` (look for the `10/01` icon)
+and its `Files` tab. 
+* Click `browse` and navigate to this repo `watson-document-classifier/data/sample_text.txt`
+* Click `browse` and navigate to this repo `watson-document-classifier/configuration/sample_config.txt`
 
 ![](doc/source/images/add_file.png)
 
-#### Fix-up variable names
-Once the files have been uploaded into ``DSX-ObjectStore`` you need to update the variables that refer to the data and configuration files in the Jupyter Notebook.
+> Note:  It is possible to use your own data and configuration files.
+If you use a configuration file from your computer, make sure to conform to the JSON structure given in `configuration/sample_config.txt`.
 
-In the notebook, update the global variables the in cell following `2.3 Global Variables` section.
+#### Fix-up file names for your own data and configuration files
 
-Replace the `sampleTextFileName` with the name of the data file and `sampleConfigFileName` with the configuration file name.
+If you use your own data and configuration files, you will need to update the variables that refer to the data and configuration files in the Jupyter Notebook.
+
+In the notebook, update the global variables in the cell following `2.3 Global Variables` section.
+
+Replace the `sampleTextFileName` with the name of your data file and `sampleConfigFileName` with your configuration file name.
 
 ![](doc/source/images/update_variables.png)
 
@@ -100,14 +104,13 @@ Replace the `sampleTextFileName` with the name of the data file and `sampleConfi
 #### Add the Watson Natural Language Understanding credentials to the notebook
 Select the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
 
-Open the Watson Natural Language Understanding service in your `Bluemix Dashboard`. You can follow the link below to use the Bluemix UI to open the service.
-* [**Watson Natural Language Understanding**](https://console.bluemix.net/dashboard/services)
+Open the Watson Natural Language Understanding service in your [Bluemix Dashboard](https://console.bluemix.net/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
 
 Once the service is open click the `Service Credentials` menu on the left.
 
 ![](doc/source/images/service_credentials.png)
 
-In the `Service Credentials` that opens up in the UI, select `Credentials` you would like to use in the notebook from the `KEY NAME` column. Click `View credentials` and copy `username` and `password` key values that appear on the UI in JSON format.
+In the `Service Credentials` that opens up in the UI, select whichever `Credentials` you would like to use in the notebook from the `KEY NAME` column. Click `View credentials` and copy `username` and `password` key values that appear on the UI in JSON format.
 
 ![](doc/source/images/copy_credentials.png)
 
@@ -116,10 +119,13 @@ Update the `username` and `password` key values in the cell below `2.1 Add your 
 ![](doc/source/images/watson_nlu_credentials.png)
 
 #### Add the Object Storage credentials to the notebook
-Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update
-the credentials for Object Store. 
+* Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update the credentials for Object Store. 
+* Delete the contents of the cell
 
-Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert Crendentials` from drop down menu.
+* Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below `2.2 Add...`  
+* Select `Insert to code` (below your sample_text.txt). 
+* Click `Insert Crendentials` from drop down menu.
+* Make sure the credentials are saved as `credentials_1`.
 
 ![](doc/source/images/objectstorage_credentials.png)
 
@@ -127,6 +133,9 @@ Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You sho
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
+
+> IMPORTANT: The first time you run your notebook, you will need to install the necessary
+packages in section 1.1 and then `Restart the kernel`.
 
 Each code cell is selectable and is preceded by a tag in the left margin. The tag
 format is `In [x]:`. Depending on the state of the notebook, the `x` can be:
@@ -151,10 +160,11 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-The notebook stores the result in ``DSX-ObjectStore`` once it has completed the text classification. The results are stored in  `sample_text_classification.txt` file. Follow the link below to find the ``DSX-ObjectStore`` service listed. Click the ``DSX-ObjectStore`` in the list, click the listed containers to find `sample_text_classification.txt` in their file listing. Select `sample_text_classification.txt` file using select box on the left in the file listing. Click the `SelectAction` button on the top file of the file listing and use the `Download File` drop down menu to download `sample_text_classification.txt` file.
-
-Follow the link to open your Object Store Service in Bluemix.
-* [**DSX-ObjectStore**](https://console.bluemix.net/dashboard/storage)
+* To see the results, go to [DSX-ObjectStore](https://console.bluemix.net/dashboard/storage)
+* Click on the name of your object storage
+* Click on the Container with the name you gave your Notebook
+* Select `sample_text_classification.txt` file using select box to the left of the file listing
+* Click the `SelectAction` button and use the `Download File` drop down menu to download `sample_text_classification.txt` file.
 
 ![](doc/source/images/objectstore_download_file.png)
 
@@ -163,11 +173,11 @@ Follow the link to open your Object Store Service in Bluemix.
 
 After running each cell of the notebook under Classify text, the results will display. 
 
-The configuration json controls the way the text is classfied. The classification process is divided into stages - Base Tagging and Domain Tagging. The Base Tagging stage can be used to specify keywords based classification, regular expression based classification and tagging based on chunking expressions. The Domain Tagging stage can be used to specify classification that are specific to the domain to augment the results from Watson Natural Language Understanding.
+The configuration json controls the way the text is classified. The classification process is divided into stages - Base Tagging and Domain Tagging. The Base Tagging stage can be used to specify keywords based classification, regular expression based classification, and tagging based on chunking expressions. The Domain Tagging stage can be used to specify classification that is specific to the domain, in order to augment the results from Watson Natural Language Understanding.
 
 ![](doc/source/images/text_classify_config.png)
 
-We can modify the configuration json to add more keywords, regular expressions to augment the text classification without any changes to the code.
+We can modify the configuration json to add more keywords or add regular expressions. In this way, we can augment the text classification without any changes to the code.
 We can add more stages to the configuration json if required and enhance the text classification results with code modifications.
 
 It can be seen from the classification results that the keywords and regular expressions specified in the configuration have been correctly classified
