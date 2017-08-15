@@ -64,7 +64,7 @@ Create the following Bluemix service and name it wdc-NLU-service:
 
 In [Data Science Experience](http://datascience.ibm.com/):
 
-Use the menu on the left to select `My Projects` and then `Default Project`.
+Use the menu on the top to select `Projects` and then `Default Project`. 
 Click on `Add notebooks` (upper right) to create a notebook.
 
 * Select the `From URL` tab.
