@@ -1,5 +1,7 @@
 # Augmented Classification of text with Watson Natural Language Understanding and IBM Data Science experience
 
+*Read this in other languages: [한국어](README-ko.md).*
+
 In this developer journey we will use Jupyter notebooks in IBM Data Science experience(DSX) to augment
 IBM Watson Natural Language Understanding API output through configurable mechanism for text classification.
 
