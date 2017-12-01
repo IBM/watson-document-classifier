@@ -59,14 +59,14 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 Create the following Bluemix service and name it wdc-NLU-service:
 
   * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
-  
+
   ![](doc/source/images/bluemix_service_nlu.png)
 
 ## 3. Create the notebook
 
 In [Data Science Experience](http://datascience.ibm.com/):
 
-Use the menu on the top to select `Projects` and then `Default Project`. 
+Use the menu on the top to select `Projects` and then `Default Project`.
 Click on `Add notebooks` (upper right) to create a notebook.
 
 * Select the `From URL` tab.
@@ -82,7 +82,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 #### Add the data and configuration to the notebook
 
 * From the `My Projects > Default` page, Use `Find and Add Data` (look for the `10/01` icon)
-and its `Files` tab. 
+and its `Files` tab.
 * Click `browse` and navigate to this repo `watson-document-classifier/data/sample_text.txt`
 * Click `browse` and navigate to this repo `watson-document-classifier/configuration/sample_config.txt`
 
@@ -104,7 +104,7 @@ Replace the `sampleTextFileName` with the name of your data file and `sampleConf
 ## 5. Update the notebook with service credentials
 
 #### Add the Watson Natural Language Understanding credentials to the notebook
-Select the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
+Select the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding.
 
 Open the Watson Natural Language Understanding service in your [Bluemix Dashboard](https://console.bluemix.net/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
 
@@ -121,11 +121,11 @@ Update the `username` and `password` key values in the cell below `2.1 Add your 
 ![](doc/source/images/watson_nlu_credentials.png)
 
 #### Add the Object Storage credentials to the notebook
-* Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update the credentials for Object Store. 
+* Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update the credentials for Object Store.
 * Delete the contents of the cell
 
-* Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below `2.2 Add...`  
-* Select `Insert to code` (below your sample_text.txt). 
+* Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below `2.2 Add...`
+* Select `Insert to code` (below your sample_text.txt).
 * Click `Insert Crendentials` from drop down menu.
 * Make sure the credentials are saved as `credentials_1`.
 
@@ -173,7 +173,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 8. Analyze the results
 
-After running each cell of the notebook under Classify text, the results will display. 
+After running each cell of the notebook under Classify text, the results will display.
 
 The configuration json controls the way the text is classified. The classification process is divided into stages - Base Tagging and Domain Tagging. The Base Tagging stage can be used to specify keywords based classification, regular expression based classification, and tagging based on chunking expressions. The Domain Tagging stage can be used to specify classification that is specific to the domain, in order to augment the results from Watson Natural Language Understanding.
 
