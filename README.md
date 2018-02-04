@@ -15,7 +15,7 @@ When the reader has completed this journey, they will understand how to:
 * Use the combination of grammatical classification and regex patterns from a configuration file to classify word token classes.
 * Store the processed output JSON in DSX Object Storage.
 
-The intended audience for this journey is developers who want to learn a method for augumenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is a scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this journey is that it allows a configurable mechanism of text classification. It helps give a developer a head start in the case of text from a specialized domain, with no generally available English parser.
+The intended audience for this journey is developers who want to learn a method for augmenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is a scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this journey is that it allows a configurable mechanism of text classification. It helps give a developer a head start in the case of text from a specialized domain, with no generally available English parser.
 
 ![](doc/source/images/architecture.png)
 
@@ -65,7 +65,7 @@ Create the following Bluemix service and name it wdc-NLU-service:
 
 ## 3. Create the notebook
 
-In [Data Science Experience](http://datascience.ibm.com/):
+In [Data Science Experience](https://datascience.ibm.com/):
 
 Use the menu on the top to select `Projects` and then `Default Project`.
 Click on `Add notebooks` (upper right) to create a notebook.
@@ -124,7 +124,6 @@ Update the `username` and `password` key values in the cell below `2.1 Add your 
 #### Add the Object Storage credentials to the notebook
 * Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update the credentials for Object Store.
 * Delete the contents of the cell
-
 * Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below `2.2 Add...`
 * Select `Insert to code` (below your sample_text.txt).
 * Click `Insert Crendentials` from drop down menu.
@@ -174,7 +173,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 8. Analyze the results
 
-After running each cell of the notebook under Classify text, the results will display.
+After running each cell of the notebook under `Classify text`, the results will display.
 
 The configuration json controls the way the text is classified. The classification process is divided into stages - Base Tagging and Domain Tagging. The Base Tagging stage can be used to specify keywords based classification, regular expression based classification, and tagging based on chunking expressions. The Domain Tagging stage can be used to specify classification that is specific to the domain, in order to augment the results from Watson Natural Language Understanding.
 
