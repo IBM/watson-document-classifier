@@ -9,5 +9,5 @@ Jupyter Notebooks
   time.
 * Many of the cells rely on variables that are set in earlier cells. Some of
   these are cleared in later cells. Start over at the top when troubleshooting.
-* Many of the cells rely on service credentials from Bluemix that are set in
-  earlier cells. Make sure to add your service credentials correctly.
+* Many of the cells rely on service credentials from IBM Cloud that are set in
+  earlier cells. Make sure to add your service credentials correctly.  

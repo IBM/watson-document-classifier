@@ -23,9 +23,9 @@ The intended audience for this journey is developers who want to learn a method 
 
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
-* [Bluemix Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): A Bluemix service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
+* [IBM Cloud Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): A Bluemix service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
-* [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): A Bluemix service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
+* [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): A IBM Cloud service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
 
 ## Featured technologies
 
@@ -42,7 +42,7 @@ Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
-1. [Create Bluemix services](#2-create-bluemix-services)
+1. [Create IBM Cloud services](#2-create-bluemix-services)
 1. [Create the notebook](#3-create-the-notebook)
 1. [Add the data and configuraton file](#4-add-the-data-and-configuration-file)
 1. [Update the notebook with service credentials](#5-update-the-notebook-with-service-credentials)
@@ -55,9 +55,9 @@ described in detail below.
 Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). 
 By signing up for the Data Science Experience, two services will be created - ``Spark`` and ``ObjectStore`` in your Bluemix account. Choose the storage type as Object Storage (Swift API) for this code pattern.
 
-## 2. Create Bluemix services
+## 2. Create IBM Cloud services
 
-Create the following Bluemix service and name it wdc-NLU-service:
+Create the following IBM Cloud service and name it wdc-NLU-service:
 
   * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
 
@@ -105,9 +105,9 @@ Replace the `sampleTextFileName` with the name of your data file and `sampleConf
 ## 5. Update the notebook with service credentials
 
 #### Add the Watson Natural Language Understanding credentials to the notebook
-Select the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding.
+Select the cell below `2.1 Add your service credentials from IBM Cloud for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
 
-Open the Watson Natural Language Understanding service in your [Bluemix Dashboard](https://console.bluemix.net/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
+Open the Watson Natural Language Understanding service in your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
 
 Once the service is open click the `Service Credentials` menu on the left.
 
@@ -117,7 +117,7 @@ In the `Service Credentials` that opens up in the UI, select whichever `Credenti
 
 ![](doc/source/images/copy_credentials.png)
 
-Update the `username` and `password` key values in the cell below `2.1 Add your service credentials from Bluemix for the Watson services` section.
+Update the `username` and `password` key values in the cell below `2.1 Add your service credentials from IBM Cloud for the Watson services` section.
 
 ![](doc/source/images/watson_nlu_credentials.png)
 

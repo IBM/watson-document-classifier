@@ -22,7 +22,7 @@
 
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Managed Spark와 같이 IBM value-adds를 포함하여 구성되고 협업이 가능한 환경에서 RStudio, Jupyter, Python 등을 사용하여 데이터를 분석하십시오.
 
-* [Bluemix Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): 높은 신뢰성과 빠른 시장 출시 속도로 비용 효율적인 앱 및 서비스를 개발할 수 있도록 비정형 클라우드 데이터 저장 공간을 제공하는 블루믹스 서비스 입니다.
+* [IBM Cloud Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): 높은 신뢰성과 빠른 시장 출시 속도로 비용 효율적인 앱 및 서비스를 개발할 수 있도록 비정형 클라우드 데이터 저장 공간을 제공하는 블루믹스 서비스 입니다.
 
 * [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): 텍스트를 분석하여 컨셉, 엔티티, 키워드, 카테고리, 감정, 긍부정, 관계, 문맥적 역할 등의 메타데이터를 추출하는 블루믹스 서비스 입니다.
 
@@ -40,7 +40,7 @@
 이 개발자 과정을 구성하고 실행하려면 다음의 단계를 따르십시오. 각 단계의 세부 사항이 아래에 설명되어 있습니다.
 
 1. [Data Science Experience 가입](#1-data-science-experience-가입)
-1. [Bluemix 서비스 생성](#2-bluemix-서비스-생성)
+1. [IBM Cloud 서비스 생성](#2-bluemix-서비스-생성)
 1. [주피터 노트북 생성](#3-주피터-노트북-생성)
 1. [데이터와 구성 파일 추가](#4-데이터와-구성-파일-추가)
 1. [서비스 신임 정보 변경](#5-서비스-신임-정보-변경)
@@ -52,7 +52,7 @@
 
 IBM [Data Science Experience](http://datascience.ibm.com/)에 가입하면 블루믹스 계정에 두개의 서비스(``DSX-Spark``와 ``DSX-ObjectStore``)가 생성됩니다.
 
-## 2. Bluemix 서비스 생성
+## 2. IBM Cloud 서비스 생성
 
 다음의 블루믹스 서비스를 생성하되 서비스 이름을 wdc-NLU-service로 작성합니다.
 
@@ -100,9 +100,9 @@ IBM [Data Science Experience](http://datascience.ibm.com/)에 가입하면 블�
 ## 5. 서비스 신임 정보 변경
 
 #### Watson Natural Language Understanding 서비스의 신임 정보 입력
-Watson Natural Langauage Understanding 서비스의 신임 정보를 입력하려면 노트북에서 `2.1 Add your service credentials from Bluemix for the Watson services` 섹션 아래의 셀을 선택합니다.
+Watson Natural Langauage Understanding 서비스의 신임 정보를 입력하려면 노트북에서 `2.1 Add your service credentials from IBM Cloud for the Watson services` 섹션 아래의 셀을 선택합니다.
 
-[Bluemix Dashboard](https://console.bluemix.net/dashboard/services)에서 Watson Natural Language Understanding 서비스인 `wdc-NLU-service`를 클릭합니다.
+[IBM Cloud Dashboard](https://console.bluemix.net/dashboard/services)에서 Watson Natural Language Understanding 서비스인 `wdc-NLU-service`를 클릭합니다.
 
 좌측에 있는 `Service Credentials`를 선택합니다.
 
@@ -112,7 +112,7 @@ UI에 열려있는 `Service Credentials`의 `KEY NAME`열에서 노트북에서 
 
 ![](doc/source/images/copy_credentials.png)
 
-`2.1 Add your service credentials from Bluemix for the Watson services` 섹션 아래의 셀에서 `username`과 `password` 값을 변경합니다.
+`2.1 Add your service credentials from IBM Cloud for the Watson services` 섹션 아래의 셀에서 `username`과 `password` 값을 변경합니다.
 
 ![](doc/source/images/watson_nlu_credentials.png)
 
