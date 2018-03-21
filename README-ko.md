@@ -50,7 +50,7 @@
 
 ## 1. Watson Studio 가입
 
-IBM [Watson Studio](http://datascience.ibm.com/)에 가입하면 블루믹스 계정에 두개의 서비스(``Watson Studio-Spark``와 ``Watson Studio-ObjectStore``)가 생성됩니다.
+IBM [Watson Studio](http://datascience.ibm.com/)에 가입하면 블루믹스 계정에 두개의 서비스(``Apache Spark``와 ``Object Storage``)가 생성됩니다.
 
 ## 2. IBM Cloud 서비스 생성
 
@@ -149,7 +149,7 @@ UI에 열려있는 `Service Credentials`의 `KEY NAME`열에서 노트북에서 
 
 ## 7. 결과 다운로드
 
-* 결과를 보려면 [Watson Studio-ObjectStore](https://console.bluemix.net/dashboard/storage) 사이트를 방문합니다.
+* 결과를 보려면 [Object Storage](https://console.bluemix.net/dashboard/storage) 사이트를 방문합니다.
 * 오브젝트 스토리지의 이름을 클릭합니다.
 * 노트북의 부여한 이름의 컨테이너를 클릭합니다.
 * 파일 목록의 좌측에 있는 셀렉트 박스를 사용하여 `sample_text_classification.txt` 파일을 선택합니다.

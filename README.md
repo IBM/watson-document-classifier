@@ -162,7 +162,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-* To see the results, go to [Watson Studio-ObjectStore](https://console.bluemix.net/dashboard/storage)
+* To see the results, go to [Object Storage](https://console.bluemix.net/dashboard/storage)
 * Click on the name of your object storage
 * Click on the Container with the name you gave your Notebook
 * Select `sample_text_classification.txt` file using select box to the left of the file listing
