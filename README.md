@@ -2,18 +2,18 @@
 
 *Read this in other languages: [한국어](README-ko.md).*
 
-In this developer journey we will use Jupyter notebooks in IBM Data Science experience(DSX) to augment
+In this developer journey we will use Jupyter notebooks in IBM Data Science experience(Watson Studio) to augment
 IBM Watson Natural Language Understanding API output through configurable mechanism for text classification.
 
 When the reader has completed this journey, they will understand how to:
 
-* Create and run a Jupyter notebook in DSX.
-* Use DSX Object Storage to access data and configuration files.
+* Create and run a Jupyter notebook in Watson Studio.
+* Use Watson Studio Object Storage to access data and configuration files.
 * Use IBM Watson Natural Language Understanding API to extract metadata from documents in Jupyter notebooks.
 * Extract and format unstructured data using simplified Python functions.
 * Use a configuration file to build configurable and layered classification grammar.
 * Use the combination of grammatical classification and regex patterns from a configuration file to classify word token classes.
-* Store the processed output JSON in DSX Object Storage.
+* Store the processed output JSON in Watson Studio Object Storage.
 
 The intended audience for this journey is developers who want to learn a method for augmenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is a scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this journey is that it allows a configurable mechanism of text classification. It helps give a developer a head start in the case of text from a specialized domain, with no generally available English parser.
 
@@ -21,7 +21,7 @@ The intended audience for this journey is developers who want to learn a method 
 
 ## Included components
 
-* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 * [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
@@ -41,7 +41,7 @@ The intended audience for this journey is developers who want to learn a method 
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
+1. [Sign up for the Watson Studio](#1-sign-up-for-the-data-science-experience)
 1. [Create IBM Cloud services](#2-create-ibm-cloud-services)
 1. [Create the notebook](#3-create-the-notebook)
 1. [Add the data and configuraton file](#4-add-the-data-and-configuration-file)
@@ -50,10 +50,10 @@ described in detail below.
 1. [Download the results](#7-download-the-results)
 1. [Analyze the results](#8-analyze-the-results)
 
-## 1. Sign up for the Data Science Experience
+## 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). 
-By signing up for the Data Science Experience, two services will be created - ``Spark`` and ``ObjectStore`` in your Bluemix account.
+Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). 
+By signing up for the Watson Studio, two services will be created - ``Spark`` and ``ObjectStore`` in your Bluemix account.
 
 ## 2. Create IBM Cloud services
 
@@ -65,7 +65,7 @@ Create the following IBM Cloud service and name it wdc-NLU-service:
 
 ## 3. Create the notebook
 
-In [Data Science Experience](https://datascience.ibm.com/):
+In [Watson Studio](https://datascience.ibm.com/):
 
 Use the menu on the top to select `Projects` and then `Default Project`.
 Click on `Add notebooks` (upper right) to create a notebook.
@@ -162,7 +162,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-* To see the results, go to [DSX-ObjectStore](https://console.bluemix.net/dashboard/storage)
+* To see the results, go to [Watson Studio-ObjectStore](https://console.bluemix.net/dashboard/storage)
 * Click on the name of your object storage
 * Click on the Container with the name you gave your Notebook
 * Select `sample_text_classification.txt` file using select box to the left of the file listing
