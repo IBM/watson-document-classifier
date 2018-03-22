@@ -2,7 +2,7 @@
 
 *Read this in other languages: [English](README.md).*
 
-이 개발자 과정에서는 IBM Data Science experience(Watson Studio)에서 주피터 노트북을 사용하여 IBM Watson Natural Language Understanding API의 분석 결과를 텍스트 분류를 위한 구성 가능한 메커니즘을 통해 개선합니다.
+이 개발자 과정에서는 Watson Studio 에서 주피터 노트북을 사용하여 IBM Watson Natural Language Understanding API의 분석 결과를 텍스트 분류를 위한 구성 가능한 메커니즘을 통해 개선합니다.
 
 이 개발자 과정을 완료하면 다음을 이해할 수 있습니다:
 
@@ -20,7 +20,7 @@
 
 ## 포함된 구성 요소
 
-* [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Managed Spark와 같이 IBM value-adds를 포함하여 구성되고 협업이 가능한 환경에서 RStudio, Jupyter, Python 등을 사용하여 데이터를 분석하십시오.
+* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Managed Spark와 같이 IBM value-adds를 포함하여 구성되고 협업이 가능한 환경에서 RStudio, Jupyter, Python 등을 사용하여 데이터를 분석하십시오.
 
 * [IBM Cloud Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): 높은 신뢰성과 빠른 시장 출시 속도로 비용 효율적인 앱 및 서비스를 개발할 수 있도록 비정형 클라우드 데이터 저장 공간을 제공하는 블루믹스 서비스 입니다.
 
@@ -39,7 +39,7 @@
 
 이 개발자 과정을 구성하고 실행하려면 다음의 단계를 따르십시오. 각 단계의 세부 사항이 아래에 설명되어 있습니다.
 
-1. [Watson Studio 가입](#1-data-science-experience-가입)
+1. [Watson Studio 가입](#1-watson-studio-가입)
 1. [IBM Cloud 서비스 생성](#2-bluemix-서비스-생성)
 1. [주피터 노트북 생성](#3-주피터-노트북-생성)
 1. [데이터와 구성 파일 추가](#4-데이터와-구성-파일-추가)
@@ -62,7 +62,7 @@ IBM [Watson Studio](http://datascience.ibm.com/)에 가입하면 블루믹스 �
 
 ## 3. 주피터 노트북 생성
 
-[Watson Studio](http://datascience.ibm.com/)에서:
+[Watson Studio](http://dataplatform.ibm.com/)에서:
 
 상단 메뉴의 `Projects`를 선택하고 `Default Project`를 선택합니다.
 우측 상단에 있는 `Add notebooks`를 클릭하여 노트북을 생성합니다.
