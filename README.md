@@ -2,26 +2,27 @@
 
 *Read this in other languages: [한국어](README-ko.md).*
 
-In this developer journey we will use Jupyter notebooks in IBM Data Science experience(DSX) to augment
-IBM Watson Natural Language Understanding API output through configurable mechanism for text classification.
+> Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
 
-When the reader has completed this journey, they will understand how to:
+In this code pattern we will use Jupyter notebooks in Watson Studio to augment IBM Watson Natural Language Understanding API output through configurable mechanism for text classification.
 
-* Create and run a Jupyter notebook in DSX.
-* Use DSX Object Storage to access data and configuration files.
+When the reader has completed this code pattern, they will understand how to:
+
+* Create and run a Jupyter notebook in Watson Studio.
+* Use Object Storage to access data and configuration files.
 * Use IBM Watson Natural Language Understanding API to extract metadata from documents in Jupyter notebooks.
 * Extract and format unstructured data using simplified Python functions.
 * Use a configuration file to build configurable and layered classification grammar.
 * Use the combination of grammatical classification and regex patterns from a configuration file to classify word token classes.
-* Store the processed output JSON in DSX Object Storage.
+* Store the processed output JSON in Object Storage.
 
-The intended audience for this journey is developers who want to learn a method for augmenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is a scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this journey is that it allows a configurable mechanism of text classification. It helps give a developer a head start in the case of text from a specialized domain, with no generally available English parser.
+The intended audience for this code pattern is developers who want to learn a method for augmenting classification metadata obtained from Watson Natural Language Understanding API, in situations when there is a scarcity of historical data. The traditional approach of training a Text Analytics model yields less than expected results. The distinguishing factor of this code pattern is that it allows a configurable mechanism of text classification. It helps give a developer a head start in the case of text from a specialized domain, with no generally available English parser.
 
 ![](doc/source/images/architecture.png)
 
 ## Included components
 
-* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 * [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
@@ -38,10 +39,10 @@ The intended audience for this journey is developers who want to learn a method 
 
 # Steps
 
-Follow these steps to setup and run this developer journey. The steps are
+Follow these steps to setup and run this code pattern. The steps are
 described in detail below.
 
-1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
+1. [Sign up for Watson Studio](#1-sign-up-for-watson-studio)
 1. [Create IBM Cloud services](#2-create-ibm-cloud-services)
 1. [Create the notebook](#3-create-the-notebook)
 1. [Add the data and configuraton file](#4-add-the-data-and-configuration-file)
@@ -50,10 +51,11 @@ described in detail below.
 1. [Download the results](#7-download-the-results)
 1. [Analyze the results](#8-analyze-the-results)
 
-## 1. Sign up for the Data Science Experience
+## 1. Sign up for Watson Studio
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). 
-By signing up for the Data Science Experience, two services will be created - ``Spark`` and ``ObjectStore`` in your Bluemix account.
+Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
 ## 2. Create IBM Cloud services
 
@@ -65,16 +67,15 @@ Create the following IBM Cloud service and name it wdc-NLU-service:
 
 ## 3. Create the notebook
 
-In [Data Science Experience](https://datascience.ibm.com/):
-
-Use the menu on the top to select `Projects` and then `Default Project`.
-Click on `Add notebooks` (upper right) to create a notebook.
-
+* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
+* Create a project if necessary, provisioning an object storage service if required.
+* In the `Assets` tab, select the `Create notebook` option.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
 * Enter this Notebook URL: https://github.com/IBM/watson-document-classifier/blob/master/notebooks/watson_document_classifier.ipynb
-* Click the `Create Notebook` button.
+* Select the free Anaconda runtime.
+* Click the `Create` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
 
@@ -162,7 +163,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-* To see the results, go to [DSX-ObjectStore](https://console.bluemix.net/dashboard/storage)
+* To see the results, go to [Object Storage](https://console.bluemix.net/dashboard/storage)
 * Click on the name of your object storage
 * Click on the Container with the name you gave your Notebook
 * Select `sample_text_classification.txt` file using select box to the left of the file listing
