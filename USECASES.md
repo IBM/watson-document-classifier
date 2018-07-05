@@ -1,9 +1,9 @@
 ## 1. Applicable scenarios
-This code pattern enables augmentation of the output from Watson Natural Language Understanding in certain scenarios:
+This code pattern provides an approach to augment the output from Watson Natural Language Understanding. Some of the scenarios where this approach can be used are specified below:
 
 - **Extraction of domain specific entities**
 
-We wish to extract entities which are domain specific. Let us take the domain of computing as an example. `Snapdragon`, `Atom` or `Sandy Bridge` are names of processors. Such classifications are better achieved with a dictionary. When we do not already have a custom model for Watson Natural Language Understanding, this pattern reduces the effort with the help of a rules based configuration file.
+We wish to extract entities which are domain specific. Let us take the domain of computing as an example. `Snapdragon`, `Atom` or `Sandy Bridge` are names of processors. Such classifications are better achieved with a dictionary. When we do not already have a custom model for Watson Natural Language Understanding, the approach specified in the pattern reduces the effort with the help of a rules based configuration file.
 
 - **Conditional classification**
 
@@ -11,7 +11,9 @@ A text can be classified in multiple ways. A 10 digit number can be a phone numb
 
 - **Override classification from Watson Natural Language Understanding based on context**
 
-We can have scenarios where we might need to override the classifications from Watson Natural Language Understanding based on context. A Gorilla is usually classified as an animal but it needs to be classified as a type of glass in certain contexts. Without modifying the models, we can override the classification based on the context.
+We can have scenarios where we might need to override the classifications from Watson Natural Language Understanding based on context. A Gorilla is usually classified as an animal but it needs to be classified as a type of glass in certain contexts. Without modifying the models, we can override the classification based on the context using the approach specified in the pattern.
+
+> Note: The code and configuration provided in this repository can be modified depending on the scenario to build the required solution. 
 
 ## 2. Usecases 
 
