@@ -26,5 +26,6 @@ M&E company wants to place advertisements on appropriate web pages to generate m
 ### III. Email classification
 An Insurance, Telco or any other company recieve thousands of emails from customers. There is a need to understand key concepts within emails received from end client so that they can be classified and assigned priorities to take appropriate actions. 
 
-
+### IV. Developing a Chatbot
+A chat bot is used many times to collect information from end customers. The important facts in the response from end customers must be extracted so that it can be used for further processing. The end customer can provide a mobile number or Order id based on a request by the bot. Both are say 10 digit numbers. Now, we can classify the number as a mobile number or order id based on previous question from the chatbot.
 
