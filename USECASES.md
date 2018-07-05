@@ -3,7 +3,7 @@ This code pattern provides an approach to augment the output from Watson Natural
 
 - **Extraction of domain specific entities**
 
-To understand what we mean by domain specific entities, let us take the domain of computing. `Snapdragon`, `Atom` or `Sandy Bridge` are names of processors. The names are very specific to the domain of computing. The requirement could be to extract entities which are domain specific, and in addition there could be no documents available for training an NLP tool. Such text classifications are better achieved with a dictionary. When we do not already have a custom model for Watson Natural Language Understanding or any documents for training, the approach specified in the pattern helps achieve the classification using a rules based configuration file. 
+To understand what we mean by domain specific entities, let us take the domain of computing. `Snapdragon`, `Atom` or `Sandy Bridge` are names of processors. The names are very specific to the domain of computing. The requirement could be to extract entities which are domain specific. In addition there could be no documents available for training an NLP tool. Such text classifications are better achieved with a dictionary. When we do not already have a custom model for Watson Natural Language Understanding or any documents for training, the approach specified in the pattern helps achieve the classification using a rules based configuration file. 
 
 - **Conditional classification**
 
@@ -17,5 +17,14 @@ We can have scenarios where we might need to override the classifications from W
 
 ## 2. Usecases 
 
-### a. Content recommendation
-Based upon the news articles users visited, the news portal wants to present links to articles they may also like
+### I. Content recommendation
+Based upon the previous reading history, the news portal wants to recommend articles to users. This can be done by classifying the text in every article of the news portal into pre-defined categories like Business, Food, Health etc. based on a dictionary. An article is assigned categories based on the text content. Based on the frequently read categories of the articles, the news portal can recommend articles belonging to those categories.
+
+### II. Optimize Ads
+M&E company wants to place advertisements on appropriate web pages to generate maximum clicks. For example - If there a smart phone ad, it must be displayed when a web page related to mobiles is being viewed. The text content on web pages can be classified and assigned categories. The advertisements too are classified into categories. For a web page belonging to certain categories, the ads belonging to the same categories can be displayed.
+
+### III. Email classification
+An Insurance, Telco or any other company recieve thousands of emails from customers. There is a need to understand key concepts within emails received from end client so that they can be classified and assigned priorities to take appropriate actions. 
+
+
+
