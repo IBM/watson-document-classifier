@@ -186,6 +186,11 @@ We can add more stages to the configuration json if required and enhance the tex
 It can be seen from the classification results that the keywords and regular expressions specified in the configuration have been correctly classified
 in the analyzed text that is displayed.
 
+# 9. Applicable usecase scenarios
+
+[See USECASES.md.](USECASES.md)
+
+
 # Troubleshooting
 
 [See DEBUGGING.md.](DEBUGGING.md)
