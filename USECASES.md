@@ -1,4 +1,4 @@
-## 1. Applicable scenarios
+## 1. Other applicable scenarios
 This code pattern provides an approach to augment the output from Watson Natural Language Understanding. Some of the scenarios where this approach can be used are specified below:
 
 - **Extraction of domain specific entities**
@@ -29,3 +29,4 @@ An Insurance, Telco or any other company recieve thousands of emails from custom
 ### IV. Developing a Chatbot
 A chat bot is used many times to collect information from end customers. The important facts in the response from end customers must be extracted so that it can be used for further processing. The end customer can provide a mobile number or Order id based on a request by the bot. Both are say 10 digit numbers. Now, we can classify the number as a mobile number or order id based on previous question from the chatbot.
 
+> Note: The code and configuration provided in this repository can be modified to build a solution for the above usecases.
