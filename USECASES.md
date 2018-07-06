@@ -1,4 +1,4 @@
-## 1. Other applicable scenarios
+## 1. Other business scenarios that this approach can help build a solution 
 This code pattern provides an approach to augment the output from Watson Natural Language Understanding. Some of the scenarios where this approach can be used are specified below:
 
 - **Extraction of domain specific entities**
@@ -15,7 +15,7 @@ We can have scenarios where we might need to override the classifications from W
 
 > Note: The code and configuration provided in this repository can be modified to build a solution for the above scenarios. 
 
-## 2. Usecases 
+## 2. Other Usecases that this approach can help build a solution
 
 ### I. Content recommendation
 Based upon the previous reading history, the news portal wants to recommend articles to users. This can be done by classifying the text in every article of the news portal into pre-defined categories like Business, Food, Health etc. based on a dictionary. An article is assigned categories based on the text content. Based on the frequently read categories of the articles, the news portal can recommend articles belonging to those categories.
