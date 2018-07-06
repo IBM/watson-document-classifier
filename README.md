@@ -186,6 +186,18 @@ We can add more stages to the configuration json if required and enhance the tex
 It can be seen from the classification results that the keywords and regular expressions specified in the configuration have been correctly classified
 in the analyzed text that is displayed.
 
+# Other scenarios and usecases for which a solution can be built using the above methodology
+
+[See USECASES.md.](USECASES.md)
+
+# Related links
+
+[Mine insights from software development artifacts](https://developer.ibm.com/code/patterns/mine-insights-from-software-development-artifacts/)
+
+[Get insights on personal finance data](https://developer.ibm.com/code/?p=29292&preview=true)
+
+[Fingerprinting personal data from unstructured text](https://developer.ibm.com/code/patterns/fingerprinting-personal-data-from-unstructured-text/)
+
 # Troubleshooting
 
 [See DEBUGGING.md.](DEBUGGING.md)
