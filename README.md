@@ -24,9 +24,9 @@ The intended audience for this code pattern is developers who want to learn a me
 
 * [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
-* [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
+* [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
-* [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): A IBM Cloud service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
+* [Watson Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): A IBM Cloud service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
 
 ## Featured technologies
 
@@ -61,7 +61,7 @@ Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a p
 
 Create the following IBM Cloud service and name it wdc-NLU-service:
 
-  * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
+  * [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
 
   ![](doc/source/images/bluemix_service_nlu.png)
 
@@ -108,7 +108,7 @@ Replace the `sampleTextFileName` with the name of your data file and `sampleConf
 #### Add the Watson Natural Language Understanding credentials to the notebook
 Select the cell below `2.1 Add your service credentials from IBM Cloud for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
 
-Open the Watson Natural Language Understanding service in your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
+Open the Watson Natural Language Understanding service in your [IBM Cloud Dashboard](https://cloud.ibm.com/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
 
 Once the service is open click the `Service Credentials` menu on the left.
 
@@ -163,7 +163,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-* To see the results, go to [Object Storage](https://console.bluemix.net/dashboard/storage)
+* To see the results, go to [Object Storage](https://cloud.ibm.com/dashboard/storage)
 * Click on the name of your object storage
 * Click on the Container with the name you gave your Notebook
 * Select `sample_text_classification.txt` file using select box to the left of the file listing

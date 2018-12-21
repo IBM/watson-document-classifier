@@ -22,9 +22,9 @@
 
 * [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Managed Spark와 같이 IBM value-adds를 포함하여 구성되고 협업이 가능한 환경에서 RStudio, Jupyter, Python 등을 사용하여 데이터를 분석하십시오.
 
-* [IBM Cloud Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): 높은 신뢰성과 빠른 시장 출시 속도로 비용 효율적인 앱 및 서비스를 개발할 수 있도록 비정형 클라우드 데이터 저장 공간을 제공하는 블루믹스 서비스 입니다.
+* [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): 높은 신뢰성과 빠른 시장 출시 속도로 비용 효율적인 앱 및 서비스를 개발할 수 있도록 비정형 클라우드 데이터 저장 공간을 제공하는 블루믹스 서비스 입니다.
 
-* [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): 텍스트를 분석하여 컨셉, 엔티티, 키워드, 카테고리, 감정, 긍부정, 관계, 문맥적 역할 등의 메타데이터를 추출하는 블루믹스 서비스 입니다.
+* [Watson Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): 텍스트를 분석하여 컨셉, 엔티티, 키워드, 카테고리, 감정, 긍부정, 관계, 문맥적 역할 등의 메타데이터를 추출하는 블루믹스 서비스 입니다.
 
 ## 주요 기술
 
@@ -56,7 +56,7 @@ IBM [Watson Studio](http://datascience.ibm.com/)에 가입하면 블루믹스 �
 
 다음의 블루믹스 서비스를 생성하되 서비스 이름을 wdc-NLU-service로 작성합니다.
 
-  * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
+  * [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
 
   ![](doc/source/images/bluemix_service_nlu.png)
 
@@ -102,7 +102,7 @@ IBM [Watson Studio](http://datascience.ibm.com/)에 가입하면 블루믹스 �
 #### Watson Natural Language Understanding 서비스의 신임 정보 입력
 Watson Natural Langauage Understanding 서비스의 신임 정보를 입력하려면 노트북에서 `2.1 Add your service credentials from IBM Cloud for the Watson services` 섹션 아래의 셀을 선택합니다.
 
-[IBM Cloud Dashboard](https://console.bluemix.net/dashboard/services)에서 Watson Natural Language Understanding 서비스인 `wdc-NLU-service`를 클릭합니다.
+[IBM Cloud Dashboard](https://cloud.ibm.com/dashboard/services)에서 Watson Natural Language Understanding 서비스인 `wdc-NLU-service`를 클릭합니다.
 
 좌측에 있는 `Service Credentials`를 선택합니다.
 
@@ -149,7 +149,7 @@ UI에 열려있는 `Service Credentials`의 `KEY NAME`열에서 노트북에서 
 
 ## 7. 결과 다운로드
 
-* 결과를 보려면 [Object Storage](https://console.bluemix.net/dashboard/storage) 사이트를 방문합니다.
+* 결과를 보려면 [Object Storage](https://cloud.ibm.com/dashboard/storage) 사이트를 방문합니다.
 * 오브젝트 스토리지의 이름을 클릭합니다.
 * 노트북의 부여한 이름의 컨테이너를 클릭합니다.
 * 파일 목록의 좌측에 있는 셀렉트 박스를 사용하여 `sample_text_classification.txt` 파일을 선택합니다.
