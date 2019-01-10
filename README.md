@@ -24,18 +24,18 @@ The intended audience for this code pattern is developers who want to learn a me
 
 * [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
-* [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
+* [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
-* [Watson Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding/?cm_sp=dw-bluemix-_-code-_-devcenter): A IBM Cloud service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
+* [Watson Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding?cm_sp=dw-bluemix-_-code-_-devcenter): A IBM Cloud service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
 
 ## Featured technologies
 
-* [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
+* [Jupyter Notebooks](https://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/kp8dcM9AKrA/0.jpg)](https://www.youtube.com/watch?v=kp8dcM9AKrA)
+[![](https://img.youtube.com/vi/kp8dcM9AKrA/0.jpg)](https://www.youtube.com/watch?v=kp8dcM9AKrA)
 
 # Steps
 
@@ -53,7 +53,7 @@ described in detail below.
 
 ## 1. Sign up for Watson Studio
 
-Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
 
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
@@ -61,13 +61,13 @@ Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a p
 
 Create the following IBM Cloud service and name it wdc-NLU-service:
 
-  * [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
+  * [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
 
   ![](doc/source/images/bluemix_service_nlu.png)
 
 ## 3. Create the notebook
 
-* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
+* In [Watson Studio](https://dataplatform.cloud.ibm.com/), click on `Create notebook` to create a notebook.
 * Create a project if necessary, provisioning an object storage service if required.
 * In the `Assets` tab, select the `Create notebook` option.
 * Select the `From URL` tab.
@@ -108,7 +108,7 @@ Replace the `sampleTextFileName` with the name of your data file and `sampleConf
 #### Add the Watson Natural Language Understanding credentials to the notebook
 Select the cell below `2.1 Add your service credentials from IBM Cloud for the Watson services` section in the notebook to update the credentials for Watson Natural Langauage Understanding. 
 
-Open the Watson Natural Language Understanding service in your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
+Open the Watson Natural Language Understanding service in your [IBM Cloud Dashboard](https://cloud.ibm.com/dashboard/services) and click on your service, which you should have named `wdc-NLU-service`.
 
 Once the service is open click the `Service Credentials` menu on the left.
 
@@ -163,7 +163,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Download the results
 
-* To see the results, go to [Object Storage](https://console.bluemix.net/dashboard/storage)
+* To see the results, go to [Object Storage](https://cloud.ibm.com/dashboard/storage)
 * Click on the name of your object storage
 * Click on the Container with the name you gave your Notebook
 * Select `sample_text_classification.txt` file using select box to the left of the file listing
@@ -192,11 +192,11 @@ in the analyzed text that is displayed.
 
 # Related links
 
-[Mine insights from software development artifacts](https://developer.ibm.com/code/patterns/mine-insights-from-software-development-artifacts/)
+[Mine insights from software development artifacts](https://developer.ibm.com/patterns/mine-insights-from-software-development-artifacts/)
 
-[Get insights on personal finance data](https://developer.ibm.com/code/?p=29292&preview=true)
+[Get insights on personal finance data](https://developer.ibm.com/code/2018/01/04/power-personal-finance-monitoring-management-engineering-insights-code-pattern/)
 
-[Fingerprinting personal data from unstructured text](https://developer.ibm.com/code/patterns/fingerprinting-personal-data-from-unstructured-text/)
+[Fingerprinting personal data from unstructured text](https://developer.ibm.com/patterns/fingerprinting-personal-data-from-unstructured-text/)
 
 # Troubleshooting
 
@@ -204,6 +204,6 @@ in the analyzed text that is displayed.
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
