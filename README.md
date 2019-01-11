@@ -1,4 +1,4 @@
-# Augmented Classification of text with Watson Natural Language Understanding and IBM Data Science experience
+# Augmented Classification of text with Watson Natural Language Understanding and Watson Studio
 
 *Read this in other languages: [한국어](README-ko.md).*
 
