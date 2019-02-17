@@ -162,7 +162,7 @@ UI에 열려있는 `Service Credentials`의 `KEY NAME`열에서 노트북에서 
 
 `5. Classify Text` 밑의 셀을 실행하고 나면 결과가 보여집니다.
 
-구성 파일로 텍스트가 분류되는 방법을 조절할 수 있습니다. 구성 파일의 분류 과정은 Base Tagging과 Domain Tagging 단계로 나누어져 있습니다. Base Tagging 단계에서는 키워드 기반의 분류, 정규식 기반의 분류 및 정보 표현 기반의 태그를 지정할 수 있습니다. Domain Tagging 단계에서는 Watson NNU의 결과를 보강하기 위해 도메인 특화된 분류를 지정할 수 있습니다.
+구성 파일로 텍스트가 분류되는 방법을 조절할 수 있습니다. 구성 파일의 분류 과정은 Base Tagging과 Domain Tagging 단계로 나누어져 있습니다. Base Tagging 단계에서는 키워드 기반의 분류, 정규식 기반의 분류 및 정보 표현 기반의 태그를 지정할 수 있습니다. Domain Tagging 단계에서는 Watson NLU의 결과를 보강하기 위해 도메인 특화된 분류를 지정할 수 있습니다.
 
 ![](doc/source/images/text_classify_config.png)
 
